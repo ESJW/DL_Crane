@@ -4,7 +4,7 @@ import numpy as np
 import time, os
 
 #차례로 0 1 2 3 4 5 6
-actions = ['hook_raise', 'hook_down', 'L_swing', 'R_swing', 'b_up', 'b_down', 'stop']  #액션의 종류는 7개
+actions = ['hook_raise', 'hook_down']  #액션의 종류는 7개
 seq_length = 30 #윈도우 크기, 30개씩 쪼개서(LSTM 이기 때문에 사이즈 지정)
 secs_for_action = 30 #액션을 녹화하는 시간, 학습이 잘 안될 시 변수 크기 조정
 #30초씩 총 180초 녹화함 (액션 6개)
